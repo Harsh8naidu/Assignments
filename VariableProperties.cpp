@@ -1,5 +1,5 @@
 # include < iostream > 
-
+#include <string>
 
 // Answer 1
 
@@ -8,7 +8,10 @@
     whereas in unsigned integer 1110 and 1111 can be represented as -2 and -1.
 */ 
    
- int variable_properties() {
+
+
+
+ int VariableProperties() {
 
 
 

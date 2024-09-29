@@ -24,6 +24,7 @@
     <ProjectGuid>{ca3bd70c-1220-46bc-812a-9cf6b965668a}</ProjectGuid>
     <RootNamespace>VariableProperties</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Assignments</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,7 +128,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PointersAndReferences.cpp" />
+    <ClCompile Include="the_fastest_sorter.cpp" />
     <ClCompile Include="Variable Properties.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PointersAndReferences.hpp" />
+    <ClInclude Include="sort.hpp" />
+    <ClInclude Include="variable_properties.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
