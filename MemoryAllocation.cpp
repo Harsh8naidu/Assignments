@@ -132,6 +132,21 @@ void insert_integer(struct node** tree, int value) {
 
 }
 
+void print_tree(struct node* tree) {
+
+	if (tree == nullptr) 
+		return;
+
+	// Recur on left side
+	print_tree(tree->left);
+
+	std::cout << tree->value << " , ";
+
+	// Recur on right side
+	print_tree(tree->right);
+
+}
+
 
 int MemoryAllocation() {
 
