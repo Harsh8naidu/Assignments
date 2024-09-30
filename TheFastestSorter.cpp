@@ -45,7 +45,7 @@ void GenerateRandomNums(std::vector<int>& arr) {
 int TheFastestSorter() {
 
     std::vector<int> arr(1000);
-    generateRandomNums(arr);
+    GenerateRandomNums(arr);
     CountingSort(arr, 100);
     std::cout << "Sorted Array\n";
     for (int i = 0; i < arr.size(); i++) {

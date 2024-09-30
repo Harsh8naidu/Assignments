@@ -128,10 +128,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MemoryAllocation.cpp" />
     <ClCompile Include="PointersAndReferences.cpp" />
-    <ClCompile Include="the_fastest_sorter.cpp" />
-    <ClCompile Include="Variable Properties.cpp" />
+    <ClCompile Include="TheFastestSorter.cpp" />
+    <ClCompile Include="VariableProperties.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />
@@ -139,9 +140,10 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MemoryAllocation.hpp" />
     <ClInclude Include="PointersAndReferences.hpp" />
-    <ClInclude Include="sort.hpp" />
-    <ClInclude Include="variable_properties.hpp" />
+    <ClInclude Include="TheFastestSorter.hpp" />
+    <ClInclude Include="VariableProperties.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
