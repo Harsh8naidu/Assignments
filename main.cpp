@@ -2,6 +2,7 @@
 #include "VariableProperties.hpp"
 #include "PointersAndReferences.hpp"
 #include "MemoryAllocation.hpp"
+#include "FunctionsAndVariables.hpp"
 
 int main() {
 	
@@ -11,5 +12,7 @@ int main() {
 
 	//PointersAndReferences();
 
-	MemoryAllocation();
+	//MemoryAllocation();
+
+	FunctionsAndVariables();
 }

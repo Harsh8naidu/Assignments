@@ -86,28 +86,6 @@ struct node {
 
 struct node* root = NULL;
 
-// implement the functions described by these headers
-
-void insert_integer(struct node** tree, int value);
-
-void print_tree(struct node* tree);
-
-void terminate_tree(struct node* tree);
-
-int most_common_integer(struct node* tree);
-
-int largest_integer(struct node* tree);
-
-int summ_of_all_integers(struct node* tree);
-
-int BinarySearchTree() {
-
-	
-
-	return 0;
-
-}
-
 void insert_integer(struct node** tree, int value) {
 	
 	if (*tree == NULL) {
@@ -147,14 +125,110 @@ void print_tree(struct node* tree) {
 
 }
 
+void terminate_tree(struct node* tree) {
+
+	if (tree == nullptr)
+		return;
+
+	terminate_tree(tree->left);
+
+	terminate_tree(tree->right);
+
+	delete tree;
+
+}
+
+int most_common_integer(struct node* tree) {
+
+	int count = 0;
+
+	if (tree == nullptr)
+		return -1;
+
+	most_common_integer(tree->left);
+
+	if (tree->left == NULL && tree->right == NULL) {
+
+		count++;
+
+	}
+
+	most_common_integer(tree->right);
+
+	return count;
+
+}
+
+int largest_integer(struct node* tree) {
+
+	if (tree == nullptr)
+		return -1;
+
+	node* current = tree;
+
+	while (current->right != NULL) {
+		
+		current = current->right;
+
+	}
+
+	return current->value;
+
+}
+
+int sum_of_all_integers(struct node* tree) {
+
+	if (tree == nullptr) {
+		return 0;
+	}
+
+	return tree->value + sum_of_all_integers(tree->left) + sum_of_all_integers(tree->right);
+
+}
+
+int BinarySearchTree() {
+	struct node* root = NULL;
+
+	// Insert integers into the BST
+	insert_integer(&root, 10);
+	insert_integer(&root, 5);
+	insert_integer(&root, 20);
+	insert_integer(&root, 3);
+	insert_integer(&root, 7);
+	insert_integer(&root, 15);
+	insert_integer(&root, 30);
+
+	// Print the BST
+	std::cout << "BST in-order: ";
+	print_tree(root);
+	std::cout << std::endl;
+
+	// Find and print the largest integer
+	std::cout << "Largest integer in the BST: " << largest_integer(root) << std::endl;
+
+	// Find and print the sum of all integers
+	std::cout << "Sum of all integers in the BST: " << sum_of_all_integers(root) << std::endl;
+
+	std::cout << "\n";
+
+	std::cout << "Terminating the tree... "<< std::endl;
+
+	// Terminate the BST
+	terminate_tree(root);
+
+	return 0;
+}
+
 
 int MemoryAllocation() {
 
-	//StackOverflowFunc();
+	StackOverflowFunc();
 
-	//MemoryLeakFunc();
+	MemoryLeakFunc();
 
 	NewAndDeleteFunc();
+
+	BinarySearchTree();
 
 	return 0;
 }
