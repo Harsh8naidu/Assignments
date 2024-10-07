@@ -3,6 +3,11 @@
 #include "PointersAndReferences.hpp"
 #include "MemoryAllocation.hpp"
 #include "FunctionsAndVariables.hpp"
+#include "MeaningfulFunctions.hpp"
+#include "PassingParameter.hpp"
+#include "InteractionAndRecursion.hpp"
+#include "Arrays.hpp"
+
 
 int main() {
 	
@@ -14,5 +19,13 @@ int main() {
 
 	//MemoryAllocation();
 
-	FunctionsAndVariables();
+	//FunctionsAndVariables();
+
+	//MeaningfulFunctions();
+
+	//PassingParameter();
+
+	//InteractionAndRecursion();
+
+	Arrays();
 }

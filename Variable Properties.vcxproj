@@ -128,9 +128,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Arrays.cpp" />
     <ClCompile Include="FunctionsAndVariables.cpp" />
+    <ClCompile Include="InteractionAndRecursion.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MeaningfulFunctions.cpp" />
     <ClCompile Include="MemoryAllocation.cpp" />
+    <ClCompile Include="PassingParameter.cpp" />
     <ClCompile Include="PointersAndReferences.cpp" />
     <ClCompile Include="TheFastestSorter.cpp" />
     <ClCompile Include="VariableProperties.cpp" />
@@ -141,8 +145,12 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Arrays.hpp" />
     <ClInclude Include="FunctionsAndVariables.hpp" />
+    <ClInclude Include="InteractionAndRecursion.hpp" />
+    <ClInclude Include="MeaningfulFunctions.hpp" />
     <ClInclude Include="MemoryAllocation.hpp" />
+    <ClInclude Include="PassingParameter.hpp" />
     <ClInclude Include="PointersAndReferences.hpp" />
     <ClInclude Include="TheFastestSorter.hpp" />
     <ClInclude Include="VariableProperties.hpp" />
