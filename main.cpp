@@ -10,6 +10,7 @@
 #include "Namespaces.hpp"
 #include "UnconditionalAndConditional.hpp"
 #include "ScopeAndExtent.hpp"
+#include "ObjectsAndClasses.hpp"
 
 
 int main() {
@@ -36,5 +37,7 @@ int main() {
 
 	//UnconditionalAndConditional();
 
-	ScopeAndExtent();
+	//ScopeAndExtent();
+
+	ObjectsAndClasses();
 }
