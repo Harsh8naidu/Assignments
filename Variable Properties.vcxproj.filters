@@ -45,6 +45,9 @@
     <ClCompile Include="Arrays.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Namespaces.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />
