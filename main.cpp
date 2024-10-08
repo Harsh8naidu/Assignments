@@ -9,6 +9,7 @@
 #include "Arrays.hpp"
 #include "Namespaces.hpp"
 #include "UnconditionalAndConditional.hpp"
+#include "ScopeAndExtent.hpp"
 
 
 int main() {
@@ -33,5 +34,7 @@ int main() {
 
 	//Namespaces();
 
-	UnconditionalAndConditional();
+	//UnconditionalAndConditional();
+
+	ScopeAndExtent();
 }

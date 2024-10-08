@@ -137,6 +137,7 @@
     <ClCompile Include="Namespaces.cpp" />
     <ClCompile Include="PassingParameter.cpp" />
     <ClCompile Include="PointersAndReferences.cpp" />
+    <ClCompile Include="ScopeAndExtent.cpp" />
     <ClCompile Include="TheFastestSorter.cpp" />
     <ClCompile Include="UnconditionalAndConditional.cpp" />
     <ClCompile Include="VariableProperties.cpp" />
@@ -154,6 +155,7 @@
     <ClInclude Include="MemoryAllocation.hpp" />
     <ClInclude Include="PassingParameter.hpp" />
     <ClInclude Include="PointersAndReferences.hpp" />
+    <ClInclude Include="ScopeAndExtent.hpp" />
     <ClInclude Include="TheFastestSorter.hpp" />
     <ClInclude Include="UnconditionalAndConditional.hpp" />
     <ClInclude Include="VariableProperties.hpp" />

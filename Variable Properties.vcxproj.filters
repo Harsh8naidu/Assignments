@@ -51,6 +51,9 @@
     <ClCompile Include="UnconditionalAndConditional.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ScopeAndExtent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />
@@ -86,6 +89,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="UnconditionalAndConditional.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScopeAndExtent.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
