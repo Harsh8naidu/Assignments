@@ -7,6 +7,7 @@
 #include "PassingParameter.hpp"
 #include "InteractionAndRecursion.hpp"
 #include "Arrays.hpp"
+#include "Namespaces.hpp"
 
 
 int main() {
@@ -27,5 +28,7 @@ int main() {
 
 	//InteractionAndRecursion();
 
-	Arrays();
+	//Arrays();
+
+	Namespaces();
 }

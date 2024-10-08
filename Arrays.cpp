@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 
 void PrintName(const char name_array[]) {
@@ -7,33 +8,37 @@ void PrintName(const char name_array[]) {
 
 }
 
-void Battleship(bool* battleship_arr[][], int n, int row, int col) {
+void Battleship(std::vector<std::vector<bool>>& battleship_arr, int n, int row, int col) {
 
-	if (n <= 0)
+	if (n <= 0) {
 
 		std::cout << "No more guesses left!" << std::endl;
 		return;
 
+	}
+
 	std::cout << "Guess where the battleship is by entering the right coordinates!" << std::endl;
 
-	std::cout << "";
+	std::cout << "" << std::endl;
 
 	std::cout << "Enter the row: ";
 
 	std::cin >> row;
 
-	std::cout << "";
+	std::cout << "" << std::endl;
 
 	std::cout << "Enter the column: ";
 
 	std::cin >> col;
 
-	std::cout << "";
+	std::cout << "" << std::endl;
 
 	n--;
 
 	if (!battleship_arr[row][col]) {
-
+		
+		std::cout << "Oops you missed it! Try again." << std::endl;
+		std::cout << "" << std::endl;
 		Battleship(battleship_arr, n, row, col);
 
 	}
@@ -41,7 +46,6 @@ void Battleship(bool* battleship_arr[][], int n, int row, int col) {
 		std::cout << "Congrats! You guessed it right.";
 	}
 
-	
 }
 
 void Arrays() {
@@ -72,7 +76,7 @@ void Arrays() {
 	int row = 0;
 	int col = 0;
 
-	bool battleship_arr[rows][cols] = {false};
+	std::vector<std::vector<bool>> battleship_arr(rows, std::vector<bool>(cols, 0));
 
 	int num_guesses = 5;
 
