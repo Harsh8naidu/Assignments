@@ -138,6 +138,7 @@
     <ClCompile Include="PassingParameter.cpp" />
     <ClCompile Include="PointersAndReferences.cpp" />
     <ClCompile Include="TheFastestSorter.cpp" />
+    <ClCompile Include="UnconditionalAndConditional.cpp" />
     <ClCompile Include="VariableProperties.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +155,7 @@
     <ClInclude Include="PassingParameter.hpp" />
     <ClInclude Include="PointersAndReferences.hpp" />
     <ClInclude Include="TheFastestSorter.hpp" />
+    <ClInclude Include="UnconditionalAndConditional.hpp" />
     <ClInclude Include="VariableProperties.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
